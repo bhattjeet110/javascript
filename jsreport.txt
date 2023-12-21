@@ -1,0 +1,354 @@
+JavaScript
+
+[1] Introduction to JavaScript
+- EcmaScript standard
+- Execute in Browser or Node JS Outside of the Web browser
+- console.log("Hello !")
+
+[2] Variables
+- variables can change during runtime
+- you can declare your variables using var / let (in JS must used let) Ex: let a = 10; so a is identifier and 10 is value of variable.
+- let a = 10;
+  a = "Jeet" //variables can change during runtime
+  console.log(a) o/p Jeet
+  
+[3] const, let and var
+- Let can define single time but var can define multiple time
+- Ex: let a =10;  a = 20 // var a = 10, var a = 20;
+- Const value cant change. once you can decler const value entire script you can used declare value. Ex: const Jeet = 10;
+- cons => object
+ex. const sweet = {
+ gulabjamun: "100rs.",
+ MilkCake: "110rs.",
+ Kesar Penda: "110rs.",
+} conslole.log(sweet["MilkCake")
+o/p  110rs.
+
+[4] Primitives and Objects (Data Type)
+ - Data types [ nn bb ss u ]
+Data types [ nn bb ss u ]
+n - null // let a = null;
+n - Number// let b = 20;
+b - BigInt // let c = BigInt(5000);
+b - 
+ // let d = true;
+s - String let e = "Jeet"
+s - Symbol let f = symbole("Hi Jeet")
+u - undefined let g;
+
+typeof method used to get type of your variable
+ex. a = 10
+   console.log(typeof a) //  0/p number
+   
+[5] - Practice //
+
+[6] - Operators and Expressions
+
+1. // Arithmetic Operators 
+
+a + b // Addition
+a - b // substraction
+a / b  // division
+a * b // multiplaction
+a ** b // exponentiation Ex. 10 ** 4 = 10*10*10*10= 10000
+a % b  // Modules
+1++ // incriment
+i-- // decriment
+
+2. Assignment Operators
+
+=  //x = a
++= //x = a+b
+-+ //x = a-b
+*+ //x = a*b
+/+ //x = a/b
+** //x = a**b
+%= //x = a%b
+
+
+3. Comparison Operators  (true / false}
+ == // a==b
+ != // a==b
+ === // a===b
+ !== // a!==b
+ > // a>b
+ < // a<b
+ 
+4. Logical Operators (true / false}
+console.log(x<y && x==5) // &&
+console.log(x>y || x==5) // ||
+console.log(x>y != x==5) // !=
+
+[7] - Conditional expressions
+ 
+If , if else, if else if else
+Prompt (Ask question)
+Alert (to give alert)
+Typecasting: a = Number.parseInt(a) // to convert the string in to the number
+
+1 - if statment
+if(condition){
+message / execution code
+}
+
+2 - if else
+if(condition){
+message / execution code true
+}
+else{
+message / execution code false
+}
+
+3 - if else if else
+if(condition){
+message / execution code1
+}
+else if{
+message / execution code  2.1
+}
+else if{
+message / execution code 2.2
+}  else if {} else if {}..
+
+
+else{
+message / execution code 3
+}
+
+[8] - Practice //
+
+[9] - For Loops
+
+1 - For Loops
+for (parameter1 ; parameter2 ; parameter3)
+{
+block of code or message
+}
+ex. for (let i =0 ; i<10; i++)
+{
+console.log(i)
+}
+
+2 - For in  ( for in loop used with object)
+
+for (variable or key name in object_name)
+
+ex.
+let obj = class{
+jeet: 20,
+romit: 10,
+dipen: 30
+}
+for in loop usee//for(let a in obj){
+console.log(a + " is " + obj[a])
+}
+o/p : jeet is 20
+      romit is 10
+	  dipen is 30
+	 
+[10] While / do while Loops	 
+
+* while loop
+while(condition){
+execution code //
+}
+var = 0;
+ex. while (var1<var){
+console.log(var)
+var++;
+}
+
+ex. let i =0;
+let n = 3;
+while(i<n){
+console.log(i)
+i++; // i+1
+} o/p 1 ,2  // 1,2,3
+
+
+** do while
+
+do {
+   execution code //
+ } while(condition)
+
+ex.
+ do {
+    console.log(i)
+    i++; // i+1
+} while(i<n) o/p same as while : 1 , 2 // 1,2,3 
+
+[11] Functions (MOST IMP)
+
+many ways to define function
+
+1 - function function_name ( ){
+message / block of code 
+
+}
+
+ex. function fn (){
+conslole.write("this is function")
+} o/p : this is function
+
+2 - Aerrow function (most used in lates js or IMP)
+
+var/const function_name (parameter) => {
+block of code or logic//
+}
+
+ex. const fun (x , y) =>{
+let z = x + y;
+return z;
+} 
+let a = fun (10 , 20)
+conslole.log(a)
+o/p : 30
+
+[12] - Practice //
+
+[13] Introduction to Strings
+ string is always define with "" / '' /
+ ex: let str = "JEET"/ 'JEET'
+ 
+ - string.length(str) // this is define totel lenght of given string 
+  = 
+  
+  let name = "jeet"
+  console.log(name, name.length)
+  VM263:2 jeet 4
+  
+ * Tamplate Literals:
+ its is used to merge two or motre string which is defien ~.....~
+ ex.
+  let mrgstr = ~${str1} + " is merge " + ${str2}`
+  o/p: str1 is merge str2
+  
+[14] String Methods
+
+string_name.length()
+string_name.toUpperCase()
+string_name.toLowerCase()
+string_name.slice(from , to)
+string_name.replace("replace place name", "new keyword")
+string_name.concate(string_name2, "ok") // string_name string_name2 ok ** to connect two string and you can add extra string in " .."/
+string_name.trim() remove the white space like string_name = "      jeet   " // o/p jeet
+
+
+[15] - Practice //
+
+[16] - Introduction to Arrays
+
+Array is a collection of an elements.
+
+syn: array_name [ parameter1, parameter2, ...]
+
+ex: const array = [1, 2, 3, 4]
+console,log(array)
+o/p;
+[0] 1
+[1] 2
+[2] 3
+[3] 4
+console,log(array.length)// used to get array length = 4
+you can also replace the array value using [3] = 5;  = 1,2,3,5
+also you can used many types of data like string , number, boolean et.. ex: let array = ["jeet", 0, true] hear jeet is string 0 is number and true is boolean.
+and array type is OBJECT. concole.log(typeof.arry) = object.
+
+[17] Array Methods
+
+toString() // conver array value in to string
+join() // jone arry parameter like let array.join(" _") o/p [1_2_3_4]
+pop() // remove last elements in tho the array ex. array.pop() o/p [1_2_3]
+push() // Add an elements in to the at last of arrayex. ex. array.push("JEET") o/p [1_2_3_JEET]
+shift()//remove first element of the array ex:[2_3_4_jeet]
+unShift() // Add an elemet begning in the array  ex. array.unShift("BhaTT) o/p:  [BHATT_1_2_3_JEET]
+delete() // delete element you want ex: array = [0,1,2,3] delete array[2] o/p [0,1,3]
+
+[18] Some or Array Methods
+ concate() // join two or many array ex: array1 concate(array2, array3)
+ 
+ short() // short fun used to short your elements in alphabeticals
+ 
+ splice() // used to add a new items in array like array splice(3 , 2, 20,21) hear 3 is start element , 2 is element count, and 20 ,21  is a new added elemets)
+ o/p: [1,2,3,20,21,60]
+
+ reverse() // used to reverse to your array like [30,21,20,3,2,1]
+ 
+[19]  Loops With Arrays 
+
+***////topic panding (AGAIN LEARN)
+
+[20] Map, Filter & Reduce
+
+***////topic panding (AGAIN LEARN)
+
+[21] - Practice //
+
+[22] - Practice //
+
+[23] JavaScript in the Browser
+
+HTML - skeleton
+CSS - Styling
+Js  - Logic {Behave]
+
+Developers tools:
+elements, console, Network
+
+[24] script tag
+
+<script>
+
+you can write scrip many way
+
+Direct Script
+<script>
+console.log()
+</script>
+
+you can connect your script in your html using
+
+<scfript src"...."></script>
+
+[25] JavaScript Console Object
+
+console.log() // print statment in console
+console.warn() // used to give warning 
+console.alert() // give alert
+console.assert() // console.assert(a>b) o/p truse / false used to chek  condition true or false
+console.error() // gives an error
+console.info() // give tpo some special information
+console.table() // yoused to your array data arrange in table formate.
+
+[26] - solution of practice //
+
+[27] - alert, prompt
+
+are used to invoked /open mini window on your browser like popup
+
+alert()  // console.alert("Dont touch bhai") // give an allert
+
+Prompt() // used for input string 
+like ex: let pro = prompt("Enter your choise number") / enter your choise number:
+
+[28] DOM, BOM & Window
+
+DOM - DOCUMENT OBJECT MODEL
+BOM - BROWSER OBJECT MODEL
+
+Window - is a global object
+console.window()
+
+DOM - DOCUMENT OBJECT MODEL
+all html code make in a javascript objec
+
+document.body() // it indicate all things in a document like html Body elements / css a to z.
+
+BOM - BROWSER OBJECT MODEL
+it is used to additional objecs provide by the browser.
+it meas you can navigate your page to another page like location.href="https//
+
+[29] - Practice //
+
+[30] - Practice //

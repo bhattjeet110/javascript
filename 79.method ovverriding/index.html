@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Employee {
+  
+  login() {
+    console.log(`Employee has logged in`);
+  }
+
+  logout() {
+    console.log(`Employee has logged out`);
+  }
+
+  requestLeaves(leaves) {
+    console.log(`Employee has requested ${leaves} leaves - Auto approved`)
+  }
+}
+
+class Programmer extends Employee {
+  
+  requestCoffee(x) {
+    console.log(`Employee has requested ${x} coffees`)
+  }
+  requestLeaves(leaves) {
+    super.requestLeaves(4) // super keywor ka used or method overridding
+    console.log("One extra is granted")
+    
+
+  }
+}
+
+let e = new Programmer
+let f = new Employee
+e.login()
+e.requestLeaves(3)
+f.logout()
+
+    </script>
+</body>
+</html>

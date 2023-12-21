@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class Trainform {
+
+        constructor (givenName,trainNumber){
+            console.log("constructure called" + givenName + trainNumber)
+this.name = givenName
+this.trainNumber = trainNumber
+
+
+        }
+
+submit(){
+    alert(this.name + " : your Form submitted!" + " and train number is " + this.trainNumber)
+}
+
+cancle(){
+    alert(this.name + " youtr Form cancled!" + " and train number is " + this.trainNumber)
+}
+       }
+
+let jeetForm = new Trainform( "JEET", 69)
+// jeetForm.fill("JEET", 69)
+let dipenForm = new  Trainform("DIPEN" ,  20 )
+// dipenForm.fill("DIPEN" ,  20)
+
+
+jeetForm.submit()
+dipenForm.submit()
+jeetForm.cancle()
+    </script>
+</body>
+</html>

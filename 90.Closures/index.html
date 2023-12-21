@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function init() {
+        var name = "Mozilla"; // name is a local variable created by init
+        function displayName() {
+          // displayName() is the inner function, that forms the closure
+          console.log(name); // use variable declared in the parent function
+        }
+        name = "JEET"; // refrence variable change
+        return displayName;
+      }
+      let c = init();
+
+      c();
+    </script>
+  </body>
+</html>
+
+
+<!-- MDN EXAMPLE -->
